@@ -74,6 +74,19 @@ public class Auteur{
         }
     }
 
+    public String citationStyle(Style s){
+        if(s == Style.COMÉDIE){
+            return this.comedie;
+        }
+        else if(s == Style.TRAGÉDIE){
+            return this.tragedie;
+        }
+        else{
+            assert s == Style.DRAME;
+            return this.drame;
+        }
+    }
+
     // String
 
     @Override

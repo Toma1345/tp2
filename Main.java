@@ -81,5 +81,6 @@ class Main {
     assert aristophane.pointFort() == "Comédie";
 
     assert aristophane.qualiteStyle(Style.COMÉDIE) == 100;
+    assert aristophane.citationStyle(Style.TRAGÉDIE) == citation_thesmophories;
   }
 }
