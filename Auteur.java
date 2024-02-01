@@ -25,6 +25,10 @@ public class Auteur{
         return this.qltTragedie;
     }
 
+    public String getCitationTragedie(){
+        return this.tragedie;
+    }
+
     @Override
     public String toString() {
         String s1 = "L'honorable ";
