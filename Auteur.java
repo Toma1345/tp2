@@ -21,6 +21,8 @@ public class Auteur{
         this.qltDrame = perfDrame;
     }
 
+    // les getters
+
     public int getQualiteTragedie(){
         return this.qltTragedie;
     }
@@ -44,6 +46,15 @@ public class Auteur{
     public String getCitationDrame(){
         return this.drame;
     }
+
+    // Style
+
+    public String pointFort(){
+        return " ";
+    }
+
+
+    // String
 
     @Override
     public String toString() {
