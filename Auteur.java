@@ -50,7 +50,15 @@ public class Auteur{
     // Style
 
     public String pointFort(){
-        
+        if(this.qltTragedie > this.qltComedie && this.qltTragedie > this.qltDrame){
+            return Style.TRAGÉDIE.toString();
+        }
+        else if(this.qltComedie > this.qltTragedie && this.qltComedie > this.qltDrame){
+            return Style.COMÉDIE.toString();
+        }
+        else{
+            return Style.DRAME.toString();
+        }
     }
 
 
