@@ -21,7 +21,7 @@ public class Auteur{
         this.qltDrame = perfDrame;
     }
 
-    public  getQualiteTragedie(){
+    public int getQualiteTragedie(){
         return this.qltTragedie;
     }
 
