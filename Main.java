@@ -79,5 +79,7 @@ class Main {
 
     System.out.println(euripide.toString());
     assert aristophane.pointFort() == "Comédie";
+
+    assert aristophane.qualiteStyle(Style.COMÉDIE) == 100;
   }
 }

@@ -61,16 +61,16 @@ public class Auteur{
         }
     }
 
-    public String qualiteStyle(Style s){
-        if(s == COMÉDIE){
-            return this.comedie;
+    public int qualiteStyle(Style s){
+        if(s == Style.COMÉDIE){
+            return this.qltComedie;
         }
-        else if(s == TRAGÉDIE){
-            return this.tragedie;
+        else if(s == Style.TRAGÉDIE){
+            return this.qltTragedie;
         }
         else{
-            assert s == DRAME;
-            return this.drame;
+            assert s == Style.DRAME;
+            return this.qltDrame;
         }
     }
 
