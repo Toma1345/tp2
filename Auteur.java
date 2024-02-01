@@ -1,17 +1,28 @@
-import java.util.Map;
-import java.util.HaspMap;
+import java.util.Map ;
+import java.util.HashMap ;
 
 public class Auteur{
     private String nom;
 
-    private Map<Integer, String> citations;
+    private Map< Integer, String> tragedie;
+    private Map< Integer, String> comedie;
+    private Map< Integer, String> drame;
 
-    public Auteur(String auteur, int ligneVers1, String cit1, int ligneVers2, String cit2, int ligneVers3, String cit3);{
-        this.nom = auteur;
-        this.citations = new HaspMap<>();
-        this.citations.put(ligneVers1, cit1);
-        this.citations.put(ligneVers2, cit2);
-        this.citations.put(ligneVers3, cit3);
+    public Auteur(String nom, Integer perfTrag, String trag, Integer perfCom, String com, Integer perfDrame, String drame ) {
+        this.nom = nom;
+        this.tragedie = new HashMap<>();
+        this.comedie = new HashMap<>();
+        this.drame = new HashMap<>();
+
+        this.tragedie.put(perfTrag,trag);
+        this.comedie.put(perfCom,com);
+        this.drame.put(perfDrame,drame);
     }
 
+    @Override
+    public String toString() {
+        String s1 = "L'honorable ";
+        return s1.concat(this.nom);
+
+    }
 }
