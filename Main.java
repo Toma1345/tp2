@@ -11,7 +11,10 @@ class Main {
             + " collier! A vous voir, vous n'êtes que des outres, des jacasses et des\n"
             + " viédazes!";
 
-    Auteur sophocle = new Auteur("Sophocle", 95, citation_antigone, 0, "", 60, citation_limiers);
+    Auteur sophocle = new Auteur("Sophocle",
+                                95, citation_antigone,
+                                0, "", 
+                                60, citation_limiers);
 
     String citation_hécube =
         "et elle, ayant entendu la parole des maîtres, saisissant ses voiles par l'épaule, les\n"
