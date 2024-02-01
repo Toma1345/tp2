@@ -4,19 +4,25 @@ import java.util.HashMap ;
 public class Auteur{
     private String nom;
 
-    private Map< Integer, String> tragedie;
-    private Map< Integer, String> comedie;
-    private Map< Integer, String> drame;
+    private String tragedie;
+    private String comedie;
+    private String drame;
+    private int qltTragedie;
+    private int qltComedie;
+    private int qltDrame;
 
-    public Auteur(String nom, Integer perfTrag, String trag, Integer perfCom, String com, Integer perfDrame, String drame ) {
+    public Auteur(String nom, int perfTrag, String trag, int perfCom, String com, int perfDrame, String drame ) {
         this.nom = nom;
-        this.tragedie = new HashMap<>();
-        this.comedie = new HashMap<>();
-        this.drame = new HashMap<>();
+        this.tragedie = trag;
+        this.qltTragedie = perfTrag;
+        this.comedie = com;
+        this.qltComedie = perfCom;
+        this.drame = drame;
+        this.qltDrame = perfDrame;
+    }
 
-        this.tragedie.put(perfTrag,trag);
-        this.comedie.put(perfCom,com);
-        this.drame.put(perfDrame,drame);
+    public  getQualiteTragedie(){
+        return this.qltTragedie;
     }
 
     @Override
