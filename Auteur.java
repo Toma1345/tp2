@@ -50,7 +50,7 @@ public class Auteur{
     // Style
 
     public String pointFort(){
-        return " ";
+        
     }
 
 
