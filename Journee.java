@@ -26,13 +26,12 @@ public class Journee{
         return this.nbreSpectacle.get(periode.toString());
     }
 
-
-    public int scoreJournee( Auteur auteur ){
-        return 0;
-    }
-
     public int scoreAuteur(Auteur auteur, Periode epreuve){
         return auteur.qualiteStyle(this.style.get(epreuve.toString()))*this.getNombreSpectacle(epreuve);
+    }
+
+    public int scoreJournee( Auteur auteur ){
+        return this.scoreAuteur(auteur, Periode.MATIN) + this.scoreAuteur(auteur, Periode.APRESMIDI) + this.scoreAuteur(auteur, Periode.SOIREE);
     }
 
 }
