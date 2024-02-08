@@ -82,5 +82,19 @@ class Main {
 
     assert aristophane.qualiteStyle(Style.COMÉDIE) == 100;
     assert aristophane.citationStyle(Style.TRAGÉDIE) == citation_thesmophories;
-  }
+
+    Journee journeeAristophane = new Journee(Style.MATIN, 15, Style.APRESMIDI, 20, Style.SOIREE, 26);
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.MATIN));
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.APRESMIDI));
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.SOIREE));
+
+    Journee journeeEuripide = new Journee(Style.MATIN, 30, Style.APRESMIDI, 8, Style.SOIREE, 5);
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.MATIN));
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.APRESMIDI));
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.SOIREE));
+
+    System.out.println(journeeAristophane.scoreJournee(aristophane));
+    System.out.println(journeeEuripide.scoreJournee(euripide));
+    System.out.println(journeeAristophane > journeeEuripide);
+    }
 }
