@@ -83,15 +83,15 @@ class Main {
     assert aristophane.qualiteStyle(Style.COMÉDIE) == 100;
     assert aristophane.citationStyle(Style.TRAGÉDIE) == citation_thesmophories;
 
-    Journee journeeAristophane = new Journee(Style.MATIN, 15, Style.APRESMIDI, 20, Style.SOIREE, 26);
-    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.MATIN));
-    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.APRESMIDI));
-    System.out.println(journeeAristophane.scoreAuteur(aristophane, Style.SOIREE));
+    Journee journeeAristophane = new Journee(Periode.MATIN, 15, Periode.APRESMIDI, 20, Periode.SOIREE, 26);
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Periode.MATIN));
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Periode.APRESMIDI));
+    System.out.println(journeeAristophane.scoreAuteur(aristophane, Periode.SOIREE));
 
-    Journee journeeEuripide = new Journee(Style.MATIN, 30, Style.APRESMIDI, 8, Style.SOIREE, 5);
-    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.MATIN));
-    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.APRESMIDI));
-    System.out.println(journeeEuripide.scoreAuteur(euripide, Style.SOIREE));
+    Journee journeeEuripide = new Journee(Periode.MATIN, 30, Periode.APRESMIDI, 8, Periode.SOIREE, 5);
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Periode.MATIN));
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Periode.APRESMIDI));
+    System.out.println(journeeEuripide.scoreAuteur(euripide, Periode.SOIREE));
 
     System.out.println(journeeAristophane.scoreJournee(aristophane));
     System.out.println(journeeEuripide.scoreJournee(euripide));
