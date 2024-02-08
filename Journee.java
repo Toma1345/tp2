@@ -6,7 +6,7 @@ public class Journee{
     private Map<String,Style> style;
 
 
-    public Journee(Style matin, int specMatin, Periode apresMidi, int specApresMidi, Periode soiree, int specSoiree) {
+    public Journee(Periode matin, int specMatin, Periode apresMidi, int specApresMidi, Periode soiree, int specSoiree) {
         this.nbreSpectacle = new HashMap<>();
         this.style = new HashMap<>();
         
@@ -30,7 +30,7 @@ public class Journee{
         return auteur.qualiteStyle(this.style.get(epreuve.toString()))*this.getNombreSpectacle(epreuve);
     }
 
-    public int scoreJournee( Auteur auteur ){
+    public int scoreJournee(Auteur auteur){
         return this.scoreAuteur(auteur, Periode.MATIN) + this.scoreAuteur(auteur, Periode.APRESMIDI) + this.scoreAuteur(auteur, Periode.SOIREE);
     }
 
