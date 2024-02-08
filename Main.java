@@ -96,8 +96,10 @@ class Main {
 
     System.out.println("Aristophane");
     System.out.println(journee.scoreJournee(aristophane));
+    
     System.out.println("Euripide");
     System.out.println(journee.scoreJournee(euripide));
+
     System.out.println(journee.vainqueur(euripide, aristophane).toString());
     }
 }
