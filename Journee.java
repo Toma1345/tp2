@@ -10,13 +10,13 @@ public class Journee{
         this.nbreSpectacle = new HashMap<>();
         this.style = new HashMap<>();
         
-        this.nbreSpectacle.put("Matin",specMatin);
-        this.nbreSpectacle.put("ApresMidi",specApresMidi);
-        this.nbreSpectacle.put("Soiree",specSoiree);
+        this.nbreSpectacle.put("Matin", specMatin);
+        this.nbreSpectacle.put("ApresMidi", specApresMidi);
+        this.nbreSpectacle.put("Soiree", specSoiree);
 
-        this.style.put("Matin",matin);
-        this.style.put("ApresMidi",apresMidi);
-        this.style.put("Soiree",soiree);
+        this.style.put("Matin", matin);
+        this.style.put("ApresMidi", apresMidi);
+        this.style.put("Soiree", soiree);
     }
 
     public Style getStyle(Periode periode) {
