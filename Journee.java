@@ -6,7 +6,7 @@ public class Journee{
     private Map<String,Style> style;
 
 
-    public Journee(Periode matin, int specMatin, Periode apresMidi, int specApresMidi, Periode soiree, int specSoiree) {
+    public Journee(Style matin, int specMatin, Style apresMidi, int specApresMidi, Style soiree, int specSoiree) {
         this.nbreSpectacle = new HashMap<>();
         this.style = new HashMap<>();
         
