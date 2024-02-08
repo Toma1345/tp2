@@ -77,6 +77,8 @@ class Main {
     assert aristophane.getCitationTragedie() == citation_thesmophories;
     assert aristophane.getQualiteTragedie() == 5;
 
+    System.out.println(sophocle.toString());
+
     System.out.println(euripide.toString());
     assert aristophane.pointFort() == "Comédie";
 
