@@ -87,6 +87,9 @@ class Main {
     assert aristophane.qualiteStyle(Style.COMÉDIE) == 100;
     assert aristophane.citationStyle(Style.TRAGÉDIE) == citation_thesmophories;
 
+
+    // Journée :
+
     Journee journee = new Journee(Style.DRAME, 15, Style.COMÉDIE, 20, Style.TRAGÉDIE, 26);
     System.out.println("Aristophane");
     System.out.println(journee.scoreAuteur(aristophane, Periode.MATIN));
@@ -105,5 +108,10 @@ class Main {
     System.out.println(journee.scoreJournee(euripide));
 
     System.out.println(journee.vainqueur(euripide, aristophane).toString());
+
+
+    // Tournoi :
+    Tournoi tournoi1 = new Tournoi("Mini compèt");
+    System.out.println(tournoi1.afficheParticipants());
     }
 }
