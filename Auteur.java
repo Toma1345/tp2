@@ -7,6 +7,7 @@ public class Auteur{
     private String tragedie;
     private String comedie;
     private String drame;
+    
     private int qltTragedie;
     private int qltComedie;
     private int qltDrame;
