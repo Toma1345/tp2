@@ -111,7 +111,10 @@ class Main {
 
 
     // Tournoi :
-    Tournoi tournoi1 = new Tournoi("Mini compèt");
-    System.out.println(tournoi1.afficheParticipants());
+    Tournoi tournoi = new Tournoi("Mini compèt");
+    tournoi.inscrire(euripide);
+    tournoi.inscrire(aristophane);
+    System.out.println(tournoi.getNom());
+    tournoi.débute();
     }
 }
