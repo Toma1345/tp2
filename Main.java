@@ -1,7 +1,7 @@
 import dionysies.Tournoi;
 
 class Main {
-  public static void main(String[] args) {
+public static void main(String[] args) {
     String citation_antigone =
         "C'est ainsi que j'irai reposer près de lui, chère à qui m'est cher, saintement"
             + " criminelle.";
@@ -111,11 +111,27 @@ class Main {
 
 
     // Tournoi :
+
+    // création du tournoi "Mini tournoi" :
     Tournoi tournoi = new Tournoi("Mini tournoi");
+    // inscription des auteurs au tournoi "Mini tournoi" :
     tournoi.inscrire(euripide);
     tournoi.inscrire(aristophane);
+    tournoi.inscrire(sophocle);
+    
     System.out.println(tournoi.getNom());
-    tournoi.débute();
     tournoi.afficheParticipants();
+
+    tournoi.débute();
+    System.out.println(tournoi.participantAProchaineJournée());
+    System.out.println(tournoi.participantBProchaineJournée());
+    tournoi.enregistreRésultatJournée(true);
+
+    System.out.println(tournoi.participantAProchaineJournée());
+    System.out.println(tournoi.participantBProchaineJournée());
+    tournoi.enregistreRésultatJournée(true);
+
+    System.out.println(tournoi.vainqueur());
+    System.out.println(tournoi.estTerminé());
     }
 }
